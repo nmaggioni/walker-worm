@@ -1,6 +1,6 @@
 # walker-wormkit
 
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nmaggioni/walker-wormkit)](https://goreportcard.com/report/github.com/nmaggioni/walker-wormkit) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 > An educational toolkit for worm creation.
 

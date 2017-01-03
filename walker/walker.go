@@ -46,6 +46,7 @@ func walkPath(path string, f os.FileInfo, err error) error {
 	return nil
 }
 
+// Walk is the main body of the kit: it traverses the filesystem invoking `walkPath` on each path that is found.
 func Walk(ignoredPaths []string, filePatchers map[string]func(string) bool) {
 	_ignoredPaths = ignoredPaths
 	_filePatchers = filePatchers
