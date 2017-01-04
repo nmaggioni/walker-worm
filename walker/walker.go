@@ -52,11 +52,7 @@ func Walk(ignoredPaths []string, filePatchers map[string]func(string) bool) {
 	_filePatchers = filePatchers
 	ch = make(chan bool, 100)
 	go func(ch chan bool) {
-		for {
-			didPatch, isOpen := <-ch
-			if !isOpen {
-				break
-			}
+		for didPatch := range ch {
 			if didPatch {
 				patchedFiles++
 			}
